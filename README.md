@@ -13,7 +13,7 @@
 </p>
 
 <h1 id="objective">:bulb: Objective</h1>
-</p>This project is the mobile version of the application named GoBarber. It allows the customer to view the list of barbers and make an appointment with a specif provider. This project was developed using React-Native.</p>
+</p>This project allows the customer to view the list of barbers and make an appointment with a specif provider. This project was developed using React-Native.</p>
 
 <h1 id="technologies">:rocket: Technologies</h1>
 
