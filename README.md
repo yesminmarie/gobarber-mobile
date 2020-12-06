@@ -1,7 +1,7 @@
 <h1 align="center">:rocket: GoBarber-Mobile :rocket:</h1>
 
 <p align="center">
-<img src="screenshot/GoBarber-mobile.gif" alt="GoBarber-mobile"/>
+<img src="screenshot/GoBarber_mobile.gif" alt="GoBarber-mobile"/>
 </p>
 
 <p align="center">This project was developed in GoStack Bootcamp from Rocketseat. It is the mobile version of an application for barbershops named GoBarber. The backend can be accessed <a href="https://github.com/yesminmarie/gobarber-backend">here</a> and the frontend <a href="https://github.com/yesminmarie/gobarber-web">here</a>.</p>
