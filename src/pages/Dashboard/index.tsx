@@ -20,6 +20,9 @@ import {
   ProviderName,
   ProviderMeta,
   ProviderMetaText,
+  LeftContainer,
+  Logout,
+  LogoutText,
 } from './styles';
 
 export interface Provider {
@@ -57,11 +60,17 @@ const Dashboard: React.FC = () => {
   return (
     <Container>
       <Header>
-        <HeaderTitle>
-          Bem vindo,
-          {'\n'}
-          <UserName>{user.name}</UserName>
-        </HeaderTitle>
+        <LeftContainer>
+          <Logout onPress={signOut}>
+            <Icon name="log-out" size={20} color="#999591" />
+            <LogoutText>Sair</LogoutText>
+          </Logout>
+          <HeaderTitle>
+            Bem vindo,
+            {'\n'}
+            <UserName>{user.name}</UserName>
+          </HeaderTitle>
+        </LeftContainer>
 
         <ProfileButton onPress={navigateToProfile}>
           <UserAvatar source={{ uri: user.avatar_url }} />

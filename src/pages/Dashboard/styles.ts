@@ -29,6 +29,7 @@ export const UserName = styled.Text`
   font-family: 'RobotoSlab-Regular';
 `;
 
+export const LeftContainer = styled.View``;
 export const ProfileButton = styled.TouchableOpacity``;
 
 export const UserAvatar = styled.Image`
@@ -84,4 +85,19 @@ export const ProviderMetaText = styled.Text`
   margin-left: 8px;
   color: #999591;
   font-family: 'RobotoSlab-Regular';
+`;
+
+export const Logout = styled.TouchableOpacity`
+  padding: 0px 0 10px;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
+export const LogoutText = styled.Text`
+  color: #999591;
+  font-size: 14px;
+  font-family: 'RobotoSlab-Regular';
+  margin-left: 10px;
 `;

@@ -39,7 +39,7 @@ interface ProfileFormData {
   password_confirmation: string;
 }
 const Profile: React.FC = () => {
-  const { user, updateUser } = useAuth();
+  const { user, updateUser, signOut } = useAuth();
   const formRef = useRef<FormHandles>(null);
   const navigation = useNavigation();
 
@@ -142,6 +142,7 @@ const Profile: React.FC = () => {
 
         if (response.error) {
           Alert.alert('Erro ao atualizar seu avatar.');
+          Alert.alert(response.error);
           return;
         }
 
@@ -185,6 +186,7 @@ const Profile: React.FC = () => {
             <UserAvatarButton onPress={handleUpdateAvatar}>
               <UserAvatar source={{ uri: user.avatar_url }} />
             </UserAvatarButton>
+
             <View>
               <Title>Meu perfil</Title>
             </View>
